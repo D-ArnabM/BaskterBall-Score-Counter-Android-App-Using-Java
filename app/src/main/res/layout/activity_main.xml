@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TEAM 1"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="0"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="72sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/right1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusThree1"
+                android:text="+3 POINTS"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/right2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusTwo1"
+                android:text="+2 POINTS"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/right3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusOne1"
+                android:text="FREE THROW"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:textColorPrimary"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TEAM 2"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:text="0"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="72sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/left1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusThree2"
+                android:text="+3 POINTS"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/left2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusTwo2"
+                android:text="+2 POINTS"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/left3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="plusOne2"
+                android:text="FREE THROW"
+                android:textSize="16sp"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:onClick="reset"
+        android:text="RESET"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>
